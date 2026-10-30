@@ -124,6 +124,19 @@
 
 # ------------------------------------------------------------- STRING METOTLARI ÖRNEK -------------------------------------------------------------
 
+# Görev 1 — Ürün kodu çözümleme
+# Kolay
+# Bir teknoloji mağazasında ürünlerin kodları şu şekilde tutuluyor:
+# urun_kodu = "TEL-2026-SAMSUNG"
+
+# Python kullanarak aşağıdaki bilgileri elde et:
+# 1. İlk üç karakteri alarak ürün kategorisini yazdır: TEL
+# 2. Yıl bilgisini dilimleyerek yazdır: 2026
+# 3. Son yedi karakteri alarak marka bilgisini yazdır: SAMSUNG
+# 4. Ürün kodunu tamamen ters çevirerek ekrana yazdır.
+# 5. Her işlemin neden o sonucu verdiğini yorum satırlarında açıkla.
+
+
 # urun_kodu = "TEL-2026-SAMSUNG"
 
 # # Burada 0 başlangıç indextir. Yani başlangıçtan itibaren al. Ama 3. index'i dahil etme dedik.
@@ -143,5 +156,30 @@
 
 
 
+
+# Teknoloji mağazası — Ürün bilgi kartı
+# Bir teknoloji mağazasında çalıştığını düşün. Elinde şu bilgiler var:
+# Değişken	Değer
+# urun_adi	"Samsung Galaxy S25"
+# kategori	"Telefon"
+# fiyat	42500
+# stok	12
+# indirim	0.15
+
+# Senden istediklerim:
+# 1. Bu beş değişkeni tanımla.
+# 2. %15 indirim uygulayarak yeni fiyatı hesapla ve ayrı bir değişkende sakla.
+# 3. .format() kullanarak ürün adını, kategorisini ve stok miktarını tek bir cümlede yazdır.
+# 4. f-string kullanarak ürün adını, eski fiyatını ve indirimli fiyatını tek bir cümlede yazdır.
+# 5. İndirimli fiyatı ekrana iki ondalık basamakla yazdır. Örneğin 36125.00 TL şeklinde.
+# 6. Yaptığın işlemleri yorum satırlarında açıkla.
+
+
+urun_adi = "Samsung Galaxy S25"
+kategori = "Telefon"
+
+fiyat = 42500
+stok = 12
+indirim = 0.15
 
 
