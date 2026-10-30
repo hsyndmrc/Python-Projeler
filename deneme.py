@@ -175,11 +175,32 @@
 # 6. Yaptığın işlemleri yorum satırlarında açıkla.
 
 
-urun_adi = "Samsung Galaxy S25"
-kategori = "Telefon"
+# urun_adi = "Samsung Galaxy S25"
+# kategori = "Telefon"
 
-fiyat = 42500
-stok = 12
-indirim = 0.15
+# fiyat = 42500
+# stok = 12
+# indirim = 0.15
+
+# # İndirim miktarı hesaplandı.
+# indirim_miktari = fiyat * indirim
+
+# # Ürünün tam indirimli hali hesaplandı.
+# indirimli_fiyat = fiyat - indirim_miktari
+# # print(indirimli_fiyat)
 
 
+
+# # İlk kullanım bu şekilde String Formating
+# print("Urun adi: {} Kategori: {} Urun Fiyati: {} Urun stok durumu: {}".format(urun_adi,kategori,fiyat,stok))
+# # String Formating farklı kullanım
+# print("Urun adi: {0} Kategori: {1} Urun Fiyati: {2} Urun stok durumu: {3}".format(urun_adi,kategori,fiyat,stok))
+# # String Formatlama farklı kullanım.
+# print("Urun adi: {a} Kategori: {k} Urun Fiyati: {f} Urun stok durumu: {s}".format(a = urun_adi,f = fiyat, s = stok, k = kategori))
+
+
+# # String Formating yeni şekilde yazıldı.
+# print(f"Urun adi: {urun_adi} Kategori:{kategori} Urun fiyati: {fiyat} Urun indirimli fiyati: {indirimli_fiyat}")
+
+# # indirimli fiyatı gösterme sadece 2 ondalık basamağı olacak şekilde.
+# print(f"{indirimli_fiyat:.2f}")
