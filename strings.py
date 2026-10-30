@@ -13,4 +13,8 @@
 # string index öğrenme
 password = "abc12345"
 
-print(password[0])
+# Soldan saga dogru 0'dan başlayarak ilerler. Bize 3. sıradaki index'i verir. Yani o da: 1'dir
+print(password[3])
+
+# çok uzun karakterli ifadelerde -1 yazarak son indexi buluruz. 
+print(password[-1])
