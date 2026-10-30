@@ -216,23 +216,62 @@
 # telefon = "0555-123-45-67"
 # ariza = "Modem arızası, internet kopması"
 
-musteri_adi = "   ahmet yılmaz   "
-sehir = "gaziantep"
-telefon = "0555-123-45-67"
-ariza = "Modem arızası, internet kopması"
+# musteri_adi = "   ahmet yılmaz   "
+# sehir = "gaziantep"
+# telefon = "0555-123-45-67"
+# ariza = "Modem arızası, internet kopması"
 
-# Tanımlı olan değişkende başındaki ve sonundaki tüm boşlukları aldı.
-print(musteri_adi.strip())
+# # Tanımlı olan değişkende başındaki ve sonundaki tüm boşlukları aldı.
+# print(musteri_adi.strip())
 
-# Müşterinin adını soy adının baş harflerini büyük yaptık ve değişkenin başındaki sonundakş boşlukları sildik.
-print(musteri_adi.title().strip())
+# # Müşterinin adını soy adının baş harflerini büyük yaptık ve değişkenin başındaki sonundakş boşlukları sildik.
+# print(musteri_adi.title().strip())
 
-# Şehir değişkeninindeki Tüm harfleri büyük yazdık.
-print(sehir.upper())
+# # Şehir değişkeninindeki Tüm harfleri büyük yazdık.
+# print(sehir.upper())
 
-# Telefon numarasındaki - işaretlerini kaldırdık.
+# # Telefon numarasındaki - işaretlerini kaldırdık.
+# print(telefon.replace("-",""))
+
+# # virgülü esas alarak ona göre parçalama yapar. Yani iki parçaya böldü. Dizi haline getirdi.
+# print(ariza.split(","))
+
+
+musteri = "   MEHMET DEMİR   " 
+telefon = "0532-456-78-89"
+ariza_kodu = "FBR-2026-0045"
+ariza_aciklamasi = "Modem arızası, Fiber bağlantı sorunu"
+servis_ucreti = 1250
+indirim_orani = 0.10
+
+# İndirim tutarının kaç tl olduğunu bulduk
+indirim_tutari = servis_ucreti * indirim_orani
+
+# %10 indirim uygulanmış müşteriye çıkacak ücret.
+son_ucret = servis_ucreti - indirim_tutari
+
+
+# Müşterinin adının ve soy adının yanındaki boşlukları kaldırdık.
+print(musteri.strip().lower().title())
+
+# Telefon numarasındaki - (tire) işaretleri kaldırdık.
 print(telefon.replace("-",""))
 
-# virgülü esas alarak ona göre parçalama yapar. Yani iki parçaya böldü. Dizi haline getirdi.
-print(ariza.split(","))
+# İndex belirterek arizakodu değişkenindeki FBR kısmını aldık.
+print(ariza_kodu[0:3])
 
+# İndex belirterek arizakodu değişkenindeki 2026 kısmını aldık.
+print(ariza_kodu[4:8])
+
+# Virgül ile ariza_aciklamasi değişkenini iki parçaya ayırdık.
+print(ariza_aciklamasi.split(","))
+
+# servis ücretine %10 indirim uygulanmış ve son ücret
+print(son_ucret)
+
+
+print(f"Müşteri Adı: {musteri} Arıza kodu: {ariza_kodu} ve indirimli servis ücreti: {son_ucret:.2f}")
+
+
+temiz_musteri = musteri.strip().lower().title().replace("İ","i").replace("R","r")
+print(temiz_musteri)
