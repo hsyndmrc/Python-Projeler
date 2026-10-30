@@ -96,28 +96,50 @@
 
 
 
-sayi1 = 25 # sayi1 adında değişken tanımladık ve bu değişkene 25 sayısını atadık.
-sayi2 = 10 # sayi2 adında bir değişken tanımladık ve bu değişkene 10 sayısını atadık.
-toplam_result = sayi1 + sayi2 # sayi1 ve sayi2 değişkenlerini topladık ve çıkan sonucu toplam_result değişkenine atadık.
-carpim_result = sayi1 * sayi2 # sayi1 ve sayi2 değişkenlerini çarptık ve çıkan sonucu carpim_result değişkenine atadık.
-print("Toplam Sonuç:" , toplam_result , "Çarpim Sonuç:" , carpim_result) # Ekrana Toplam Sonuç: 35 Çarpım Sonuç: 250 yazdırılır.
+# sayi1 = 25 # sayi1 adında değişken tanımladık ve bu değişkene 25 sayısını atadık.
+# sayi2 = 10 # sayi2 adında bir değişken tanımladık ve bu değişkene 10 sayısını atadık.
+# toplam_result = sayi1 + sayi2 # sayi1 ve sayi2 değişkenlerini topladık ve çıkan sonucu toplam_result değişkenine atadık.
+# carpim_result = sayi1 * sayi2 # sayi1 ve sayi2 değişkenlerini çarptık ve çıkan sonucu carpim_result değişkenine atadık.
+# print("Toplam Sonuç:" , toplam_result , "Çarpim Sonuç:" , carpim_result) # Ekrana Toplam Sonuç: 35 Çarpım Sonuç: 250 yazdırılır.
 
-urun = 10000
-indirim_orani = 0.25
+# urun = 10000
+# indirim_orani = 0.25
 
-indirimli_fiyat = urun * indirim_orani
-print("Urunun indirimli fiyati: ", indirimli_fiyat) 
+# indirimli_fiyat = urun * indirim_orani
+# print("Urunun indirimli fiyati: ", indirimli_fiyat) 
 
-name = "Sude"
-age = 23
-height = 1.60
-isStudent = True
+# name = "Sude"
+# age = 23
+# height = 1.60
+# isStudent = True
 
-result = int(isStudent)
-result2 = float(age)
-result3 = int(height)
-# result4 = int(name)  Hata alırız. string integer'a dönüşmez
-print(result , result2, result3,)
+# result = int(isStudent)
+# result2 = float(age)
+# result3 = int(height)
+# # result4 = int(name)  Hata alırız. string integer'a dönüşmez
+# print(result , result2, result3,)
+
+
+
+
+# ------------------------------------------------------------- STRING METOTLARI ÖRNEK -------------------------------------------------------------
+
+# urun_kodu = "TEL-2026-SAMSUNG"
+
+# # Burada 0 başlangıç indextir. Yani başlangıçtan itibaren al. Ama 3. index'i dahil etme dedik.
+# print(urun_kodu[0:3])
+
+# # değişkendeki 2026 sayısını yazdırma, değişkendeki 2026 yazısını diziye atma, ve type'ını gördük
+# print(urun_kodu[4:8].split())
+# print(urun_kodu[4:8])
+# print(type(urun_kodu[4:8]))
+
+# # SAMSUNG çıktısını verir. -7 ile tersten başlayarak -7. index'i bulur ve son değer vermediğimiz için sona kadar gider.
+# print(urun_kodu[-7:])
+
+# # başlangıç ve bitiş indexleri verilmedi. -1 ile artık değerini verdik. Ve bize yazıyı ters bastı.
+# print(urun_kodu[::-1])
+
 
 
 
