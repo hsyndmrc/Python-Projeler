@@ -204,3 +204,35 @@
 
 # # indirimli fiyatı gösterme sadece 2 ondalık basamağı olacak şekilde.
 # print(f"{indirimli_fiyat:.2f}")
+
+
+
+
+
+
+# ------------------------ ORNEK 3 
+# musteri_adi = "   ahmet yılmaz   "
+# sehir = "gaziantep"
+# telefon = "0555-123-45-67"
+# ariza = "Modem arızası, internet kopması"
+
+musteri_adi = "   ahmet yılmaz   "
+sehir = "gaziantep"
+telefon = "0555-123-45-67"
+ariza = "Modem arızası, internet kopması"
+
+# Tanımlı olan değişkende başındaki ve sonundaki tüm boşlukları aldı.
+print(musteri_adi.strip())
+
+# Müşterinin adını soy adının baş harflerini büyük yaptık ve değişkenin başındaki sonundakş boşlukları sildik.
+print(musteri_adi.title().strip())
+
+# Şehir değişkeninindeki Tüm harfleri büyük yazdık.
+print(sehir.upper())
+
+# Telefon numarasındaki - işaretlerini kaldırdık.
+print(telefon.replace("-",""))
+
+# virgülü esas alarak ona göre parçalama yapar. Yani iki parçaya böldü. Dizi haline getirdi.
+print(ariza.split(","))
+
