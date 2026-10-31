@@ -237,41 +237,112 @@
 # print(ariza.split(","))
 
 
-musteri = "   MEHMET DEMİR   " 
-telefon = "0532-456-78-89"
-ariza_kodu = "FBR-2026-0045"
-ariza_aciklamasi = "Modem arızası, Fiber bağlantı sorunu"
-servis_ucreti = 1250
-indirim_orani = 0.10
+# musteri = "   MEHMET DEMİR   " 
+# telefon = "0532-456-78-89"
+# ariza_kodu = "FBR-2026-0045"
+# ariza_aciklamasi = "Modem arızası, Fiber bağlantı sorunu"
+# servis_ucreti = 1250
+# indirim_orani = 0.10
 
-# İndirim tutarının kaç tl olduğunu bulduk
-indirim_tutari = servis_ucreti * indirim_orani
+# # İndirim tutarının kaç tl olduğunu bulduk
+# indirim_tutari = servis_ucreti * indirim_orani
 
-# %10 indirim uygulanmış müşteriye çıkacak ücret.
-son_ucret = servis_ucreti - indirim_tutari
+# # %10 indirim uygulanmış müşteriye çıkacak ücret.
+# son_ucret = servis_ucreti - indirim_tutari
 
 
-# Müşterinin adının ve soy adının yanındaki boşlukları kaldırdık.
-print(musteri.strip().lower().title())
+# # Müşterinin adının ve soy adının yanındaki boşlukları kaldırdık.
+# print(musteri.strip().lower().title())
 
-# Telefon numarasındaki - (tire) işaretleri kaldırdık.
-print(telefon.replace("-",""))
+# # Telefon numarasındaki - (tire) işaretleri kaldırdık.
+# print(telefon.replace("-",""))
 
-# İndex belirterek arizakodu değişkenindeki FBR kısmını aldık.
-print(ariza_kodu[0:3])
+# # İndex belirterek arizakodu değişkenindeki FBR kısmını aldık.
+# print(ariza_kodu[0:3])
 
-# İndex belirterek arizakodu değişkenindeki 2026 kısmını aldık.
-print(ariza_kodu[4:8])
+# # İndex belirterek arizakodu değişkenindeki 2026 kısmını aldık.
+# print(ariza_kodu[4:8])
 
-# Virgül ile ariza_aciklamasi değişkenini iki parçaya ayırdık.
+# # Virgül ile ariza_aciklamasi değişkenini iki parçaya ayırdık.
+# print(ariza_aciklamasi.split(","))
+
+# # servis ücretine %10 indirim uygulanmış ve son ücret
+# print(son_ucret)
+
+
+# print(f"Müşteri Adı: {musteri} Arıza kodu: {ariza_kodu} ve indirimli servis ücreti: {son_ucret:.2f}")
+
+
+# temiz_musteri = musteri.strip().lower().title().replace("İ","i").replace("R","r")
+# print(temiz_musteri)
+
+
+
+
+
+musteri = "   aHMET yILMAZ   "
+telefon = "0532-456-78-90"
+ariza_kodu = "FBR-2026-0148"
+ariza_aciklamasi = "modem arızası, internet kopması"
+servis_ucreti = 1800
+indirim_orani = 0.15
+temiz_musteri = musteri.strip().lower().title().replace("i","ı")
+
+servis_ucret_indirimi = servis_ucreti * indirim_orani
+son_fiyat = servis_ucreti - servis_ucret_indirimi
+
+# Servis ücretinin %15 indirim uygulanmış hali
+print(son_fiyat)
+
+
+print("==== SAHATAKİP SERVİS FİŞİ ====")
+
+# Sağındaki ve solundaki boşluklar silindi.
+# print(musteri.strip())
+
+# Müşteri telefon numarasındaki -(tire) işareti kaldırıldı.
+temiz_telefon = telefon.replace("-","")
+
+# FBR kısmını sadece yazdırdık
+fbr_code = ariza_kodu[0:3]
+
+# 2026 kısmını sadece yazdırdık
+fbr_yil = ariza_kodu[4:8]
+
+# 0148 kısmını sadece yazdırdık.
+fbr_serino = ariza_kodu[9:13]
+
+# Arıza açıklamasını virgülden ayırarak iki farklı arıza bilgisini elde ettik.
 print(ariza_aciklamasi.split(","))
 
-# servis ücretine %10 indirim uygulanmış ve son ücret
-print(son_ucret)
+
+print("==== TÜM BİLGİLER =====")
+
+print(f"Müşteri: {temiz_musteri}")
+print(f"Telefon: {telefon}")
+print(f"Arıza Türü: {fbr_code}")
+print(f"Ariza Yılı: {fbr_yil}")
+print(f"Arıza no: {fbr_serino}")
+print(f"Normal Ücret: {servis_ucreti}")
+print(f"İndirim: {servis_ucret_indirimi}")
+print(f"Ödenecek Tutar: {son_fiyat}")
+print("===========================")
 
 
-print(f"Müşteri Adı: {musteri} Arıza kodu: {ariza_kodu} ve indirimli servis ücreti: {son_ucret:.2f}")
 
 
-temiz_musteri = musteri.strip().lower().title().replace("İ","i").replace("R","r")
-print(temiz_musteri)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
