@@ -50,3 +50,25 @@
 
 
 # ================================================= LİSTE ÖRNEK 1 =================================================
+
+# Ahmet'in adı yaşı mesleği liste içinde tanımlandı
+liste_ahmet = ["Ahmet" , 25 , "Yazılımcı"]
+
+# Mehmet'in adı yaşı mesleği liste içinde tanımlandı
+liste_mehmet = ["Mehmet" , 30 , "Teknisyen"]
+
+# Ayşe'nin adı yaşı mesleği liste içinde tanımlandı.
+liste_ayse = ["Ayşe" , 27 , "Muhasabeci"]
+
+personeller = [liste_ahmet, liste_mehmet, liste_ayse]
+
+# Sadece mehmetin adını yazdırdık.
+print(personeller[1][0])
+
+# sadece Ayşenin ismini yazdırdık.
+print(personeller[2][0])
+
+# Ahmet'in mesleğinin tipini type ile gösterdik.
+print(type(personeller[0][2]))
+
+print(personeller)
