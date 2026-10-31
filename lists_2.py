@@ -35,3 +35,23 @@
 # print(iller)
 
 # ================================= LİSTE ÖRNEK =================================
+
+ekipmanlar = ["Modem", "Fiber Kablo", "ONT", "RJ45", "Splitter"]
+
+# Listenin ilk elemanını ve son elemanını ayrı ayrı yazdır.
+print(ekipmanlar[0]) # ilk eleman
+print(ekipmanlar[-1]) # Son eleman
+
+# Listenin ilk 3 elemanını dilimleme yöntemiyle al.
+print(ekipmanlar[0:3])
+
+# Listenin Sonun "Krone" ve "Fiber Patch Cord" ekleyerek yeni bir liste oluştur ve yeni_ekipmanlar değişkenine ata
+yeni_ekipmanlar = ekipmanlar + ["Krone","Fiber Patch Cord"]
+
+# yeni_ekipmanlar liste uzunluğu 
+print(len(yeni_ekipmanlar))
+
+del yeni_ekipmanlar[2]
+
+print(yeni_ekipmanlar)
+print(ekipmanlar)
