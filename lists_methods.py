@@ -75,44 +75,47 @@
 # print(sayilar.clear())
 
 
-# ======================================= LİST METHOT UYGULAMA =======================================
-malzemeler = ["Modem", "ONT", "Splitter", "Modem", "RJ45"]
-fiyatlar = [850, 1200, 75, 850, 30]
+# # ======================================= LİST METHOT UYGULAMA =======================================
+# malzemeler = ["Modem", "ONT", "Splitter", "Modem", "RJ45"]
+# fiyatlar = [850, 1200, 75, 850, 30]
 
-# Malzemeler listesinde kaç tane "Modem" olduğunu bul.
-print(malzemeler.count("Modem"))
+# # Malzemeler listesinde kaç tane "Modem" olduğunu bul.
+# print(malzemeler.count("Modem"))
 
 
-# RJ45 malzemesinin indeksini bul
-print(malzemeler.index("RJ45"))
+# # RJ45 malzemesinin indeksini bul
+# print(malzemeler.index("RJ45"))
 
-# Listenin sonuna "Fiber Kablo" ekle
-sonuc = malzemeler.append("Fiber Kablo")
-print(malzemeler)
+# # Listenin sonuna "Fiber Kablo" ekle
+# sonuc = malzemeler.append("Fiber Kablo")
+# print(malzemeler)
 
-# "ONT" ile "Splitter" arasına "CAT6" ekle
-malzemeler.insert(2,"CAT6")
-print(malzemeler)
+# # "ONT" ile "Splitter" arasına "CAT6" ekle
+# malzemeler.insert(2,"CAT6")
+# print(malzemeler)
 
-# Listedeki "RJ45" elemanını sil
-malzemeler.remove("RJ45")
-print(malzemeler)
+# # Listedeki "RJ45" elemanını sil
+# malzemeler.remove("RJ45")
+# print(malzemeler)
 
-# Listenin son elemanını .pop() ile çıkar ve çıkarılan elemanı ayrı bir değişkende sakla
-cikarilan_eleman = malzemeler.pop()
-print(cikarilan_eleman)
+# # Listenin son elemanını .pop() ile çıkar ve çıkarılan elemanı ayrı bir değişkende sakla
+# cikarilan_eleman = malzemeler.pop()
+# print(cikarilan_eleman)
 
-# Malzemeleri alfabetik sırala ardından ters çevir.
-malzemeler.sort()
-# Alfabetik sıralandı
-print(malzemeler)
+# # Malzemeleri alfabetik sırala ardından ters çevir.
+# malzemeler.sort()
+# # Alfabetik sıralandı
+# print(malzemeler)
 
-# Malzemeler ters çevrildi.
-malzemeler.reverse()
-print(malzemeler)
+# # Malzemeler ters çevrildi.
+# malzemeler.reverse()
+# print(malzemeler)
 
-print(min(fiyatlar))
-print(max(fiyatlar))
+# print(min(fiyatlar))
+# print(max(fiyatlar))
 
-malzemeler.sort()
-print(malzemeler)
+# malzemeler.sort()
+# print(malzemeler)
+
+
+# =========================================== LİSTE METOT UYGULAMA 3 ===========================================
