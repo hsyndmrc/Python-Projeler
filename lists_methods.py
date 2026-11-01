@@ -151,47 +151,49 @@
 # """
 # )
 
-musteri = "   aHMET kAYA   "
-telefon = "0532-456-78-90"
-email = "AHMET.KAYA@GMAIL.COM"
-ariza_kodu = "FBR-2026-0158"
-adres = "gaziantep, şahinbey, karataş"
-servis_ucreti = 1750
-indirim_orani = 0.20
-# Servis ücretine %20 indirim uygulandıktan sonra kalan ücreti hesaplar.
-servis_ucret_indirimi = servis_ucreti - (servis_ucreti * indirim_orani)
+# musteri = "   aHMET kAYA   "
+# telefon = "0532-456-78-90"
+# email = "AHMET.KAYA@GMAIL.COM"
+# ariza_kodu = "FBR-2026-0158"
+# adres = "gaziantep, şahinbey, karataş"
+# servis_ucreti = 1750
+# indirim_orani = 0.20
+# # Servis ücretine %20 indirim uygulandıktan sonra kalan ücreti hesaplar.
+# servis_ucret_indirimi = servis_ucreti - (servis_ucreti * indirim_orani)
 
-# Müşteri adındaki gereksiz boşlukları kaldırır ve ad-soyad düzgün biçimlendir.
-musteri_adi = musteri.strip().title()
-# print(musteri_adi)
+# # Müşteri adındaki gereksiz boşlukları kaldırır ve ad-soyad düzgün biçimlendir.
+# musteri_adi = musteri.strip().title()
+# # print(musteri_adi)
 
-# Teelfon numarasındaki bütün - karakterlerini temizle
-telefon_numarasi = telefon.replace("-","")
-# print(telefon_numarasi)
+# # Teelfon numarasındaki bütün - karakterlerini temizle
+# telefon_numarasi = telefon.replace("-","")
+# # print(telefon_numarasi)
 
-# Email adresindeki boşlukları kadır ve tüm harfleri küçük yap.
-email_adress = email.strip().lower()
-# print(email_adress)
+# # Email adresindeki boşlukları kadır ve tüm harfleri küçük yap.
+# email_adress = email.strip().lower()
+# # print(email_adress)
 
-#Arıza kodundaki FBR, 2026, 0158 bilgilerini string dilimleme kullanarak ayrı değişkenlere ayır.
-ariza_fbr = ariza_kodu[0:3]
-ariza_yil = ariza_kodu[4:8]
-ariza_no = ariza_kodu[9:13]
+# #Arıza kodundaki FBR, 2026, 0158 bilgilerini string dilimleme kullanarak ayrı değişkenlere ayır.
+# ariza_fbr = ariza_kodu[0:3]
+# ariza_yil = ariza_kodu[4:8]
+# ariza_no = ariza_kodu[9:13]
 
-# print(f"Arıza Kodu: {ariza_fbr} Arıza Yılı: {ariza_yil} Ariza Numarası: {ariza_no}")
+# # print(f"Arıza Kodu: {ariza_fbr} Arıza Yılı: {ariza_yil} Ariza Numarası: {ariza_no}")
 
-# Adres kelimelerini baş harflerini büyük olacak şekilde düzenle. Virgüller kalsın.
-adres_duzeni = adres.title()
-# print(adres_duzeni)
+# # Adres kelimelerini baş harflerini büyük olacak şekilde düzenle. Virgüller kalsın.
+# adres_duzeni = adres.title()
+# # print(adres_duzeni)
 
-print(f"""  Müşteri Adı: {musteri_adi} 
-            Telefon Numarasi: {telefon_numarasi}
-            Email Adresi: {email_adress}
-            Adres: {adres_duzeni}
-            Arıza Kodu: {ariza_fbr}
-            Arıza Yılı: {ariza_yil}
-            Arıza Numarasi: {ariza_no}
-            Servis Ucreti: {servis_ucreti:.2f}
-            İndirim Orani: {indirim_orani:.2f}
-            %10 İndirimli Ücret: {servis_ucret_indirimi:.2f}
-""")
+# print(f"""  Müşteri Adı: {musteri_adi} 
+#             Telefon Numarasi: {telefon_numarasi}
+#             Email Adresi: {email_adress}
+#             Adres: {adres_duzeni}
+#             Arıza Kodu: {ariza_fbr}
+#             Arıza Yılı: {ariza_yil}
+#             Arıza Numarasi: {ariza_no}
+#             Servis Ucreti: {servis_ucreti:.2f}
+#             İndirim Orani: {indirim_orani:.2f}
+#             %10 İndirimli Ücret: {servis_ucret_indirimi:.2f}
+# """)
+
+
