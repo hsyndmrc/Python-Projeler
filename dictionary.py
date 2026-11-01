@@ -21,32 +21,35 @@
 
 # print(plakalar)
 
-urunler = {
-    100: {
-        "ÜrünAdi:" : "Monitör",
-        "ÜrünAçiklamasi:" : "16 Inch",
-        "GarantiSüresi:" : 3,
-        "Fiyat: " : [800, 944],
-    },
+# urunler = {
+#     100: {
+#         "ÜrünAdi:" : "Monitör",
+#         "ÜrünAçiklamasi:" : "16 Inch",
+#         "GarantiSüresi:" : 3,
+#         "Fiyat: " : [800, 944],
+#     },
 
-    101: {
-        "UrunAdi: " : "SSD",
-        "UrunAciklamasi: " : "256 GB",
-        "GarantiSuresi: " : 2,
-        "Fiyati: " : [1500,1770],
-    }
-}
+#     101: {
+#         "UrunAdi: " : "SSD",
+#         "UrunAciklamasi: " : "256 GB",
+#         "GarantiSuresi: " : 2,
+#         "Fiyati: " : [1500,1770],
+#     }
+# }
 
-sonuc = urunler[100]["Fiyat: "]
+# sonuc = urunler[100]["Fiyat: "]
 
-tutar = urunler[100]["Fiyat: "][1] + urunler[101]["Fiyati: "][1]
-print(tutar)
+# tutar = urunler[100]["Fiyat: "][1] + urunler[101]["Fiyati: "][1]
+# print(tutar)
 
 
-print(sonuc)
+# print(sonuc)
 
 
 # print(type(urunler))
 
 
 # print(type(plakalar))
+
+
+# ================================================ DICTIONARY UYGULAMA ================================================ 
