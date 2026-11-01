@@ -15,7 +15,7 @@
 # print(plakalar["İzmir"])
 # print(plakalar["İstanbul"])
 
-# # Sözlüğün içerisine eleman ekleme
+# # Sözlüğün içerisine eleman ekleme !!!!!!!!!!
 # plakalar["Eskişehir"] = 26
 # plakalar["Bursa"] = 16
 
@@ -85,3 +85,22 @@ print(f"Ürün Stok miktari: {urunler[101]["Stok"]}")
 print(f"Ürün Fiyatı: {urunler[102]["Fiyat"]}")
 
 # BÖLÜM - 1 SONU => 
+
+# Bölüm - 2 => 
+
+# Modem ürününün fiyatını 1750 olarak güncelle
+
+urunler[100]["Fiyat"] = 1750
+print(f"Modem Yeni Fiyat: {urunler[100]["Fiyat"]}")
+
+# ONT ürününün stok miktarını 15 olarak değiştir.
+urunler[101]["Stok"] = 15
+print(f"Ont Stok Sayısı: {urunler[100]["Stok"]}")
+
+# Ürün kodu 103 olan yeni bir ürün ekle: adı: "Splitter", stok 20, fiyat 150
+urunler["Ad"] = "Splitter"
+urunler["Stok"] = 20
+urunler["Fiyat"] = 150
+print(urunler)
+
+# Bölüm - 2  SONU=> 
