@@ -53,3 +53,35 @@
 
 
 # ================================================ DICTIONARY UYGULAMA ================================================ 
+
+urunler = {
+    100:{
+        "Ad" : "Modem",
+        "Stok" : 12,
+        "Fiyat" : 1500
+    },
+    101: {
+        "Ad" : "ONT",
+        "Stok" : 8,
+        "Fiyat" : 2200
+    },
+    102: {
+        "Ad" : "RJ45",
+        "Stok" : 50,
+        "Fiyat" : 25
+    }
+}
+
+
+# BÖLÜM - 1 => 
+
+# # Ürün Kodu 100 olan ürünün yalnızca adını ekrana yazdır.
+print(f"ürünün adi: {urunler[100]["Ad"]} ") 
+
+# Ürün Kodu 101 olan ürünün stok miktarını yazdır.
+print(f"Ürün Stok miktari: {urunler[101]["Stok"]}")
+
+# Ürün Kodu 102 olan ürünün fiyatını yazdır.
+print(f"Ürün Fiyatı: {urunler[102]["Fiyat"]}")
+
+# BÖLÜM - 1 SONU => 
