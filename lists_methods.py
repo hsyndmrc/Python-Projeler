@@ -119,3 +119,34 @@
 
 
 # =========================================== LİSTE METOT UYGULAMA 3 ===========================================
+
+isletme = "   ANADOLU TEKNİK SERVİS   "
+servis_sayisi = 8
+servis_birim_ucreti = 750
+malzeme_gideri = 1350
+ulasim_gider = 450
+vergi_orani = 0.10
+toplam_servis_geliri = servis_sayisi * servis_birim_ucreti
+malzeme_ulasim_gider = malzeme_gideri + ulasim_gider
+vergi_oncesi_kazanc = toplam_servis_geliri - malzeme_ulasim_gider
+net_kazanc = vergi_oncesi_kazanc - (vergi_oncesi_kazanc * vergi_orani)
+
+temiz_isim = isletme.strip()  # Başındaki ve sonundaki boşlukları kaldırır
+print(toplam_servis_geliri) # Toplam servis gelirini hesaplar
+print(malzeme_ulasim_gider) # Malzeme ve ulaşım giderlerini toplar
+print(vergi_oncesi_kazanc) # Vergi öncesi kazancı hesaplar
+print(net_kazanc) # Net kazancı hesaplar
+
+print(f""""
+    İşletme Adı:{temiz_isim}
+    Servis Sayısı: {servis_sayisi:.2f}
+    Servis Birim Ücreti: {servis_birim_ucreti:.2f}
+    Malzeme Gideri: {malzeme_gideri:.2f}
+    Ulaşım Gideri: {ulasim_gider:.2f}
+    vergi Oranı: {vergi_orani:.2f}
+    Toplam Servis Geliri: {toplam_servis_geliri:.2f}
+    Malzeme ve Ulaşım Gideri: {malzeme_ulasim_gider:.2f}
+    Vergi Öncesi Kazanç: {vergi_oncesi_kazanc:.2f}
+    Net Kazanç: {net_kazanc:.2f}
+"""
+)
