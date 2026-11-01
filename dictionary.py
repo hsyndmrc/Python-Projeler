@@ -130,4 +130,22 @@ print(f"""
 """)
 
 
+
 # ürün stokları azaltma
+
+
+urun100_stok = urunler[100]["Stok"] - 1
+urun102_stok = urunler[102]["Stok"] - 2  
+urun103_stok = urunler[103]["Stok"] - 1 
+print(f"""
+
+            Ürün 100 Stok sayisi: {urun100_stok}
+            Ürün 102 Stok Sayisi: {urun102_stok}
+            Ürün 103 Stok Sayisi: {urun103_stok}
+
+""")
+            
+
+
+
+
