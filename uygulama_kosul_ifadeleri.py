@@ -26,14 +26,29 @@
 
 # Uygulama 3
 
-isim = input("İsim: ")
-yas = int(input("Yas: "))
-egitim = input("Egitim: ")
+# isim = input("İsim: ")
+# yas = int(input("Yas: "))
+# egitim = input("Egitim: ")
 
-if (yas >= 18):
-    if (egitim == "lise" or egitim == "üniversite"):
-        print("Ehliyet alabilirsiniz")
-    else:
-        print(f"{isim} ehliyet alamazsiniz. Cünkü Egitim durumu yetersiz.")
+# if (yas >= 18):
+#     if (egitim == "lise" or egitim == "üniversite"):
+#         print("Ehliyet alabilirsiniz")
+#     else:
+#         print(f"{isim} ehliyet alamazsiniz. Cünkü Egitim durumu yetersiz.")
+# else:
+#     print(f"{isim} ehliyet alamazsiniz. Cunku yasiniz tutmuyor")
+
+
+ariza_turu = input("Ariza türü Giriniz: ")
+internet_var = bool(int(input("İnternet Var ise 1, Yok ise 0'a basiniz: ")))
+musteri_tipi = input("Kurumsal mi Normal Musteri mi Yaziniz: ")
+
+if (ariza_turu == "Fiber" and internet_var):
+    print("Acil Fiber Arizasi!!!")
+elif(musteri_tipi == "Kurumsal"):
+    print("Kurumsal Müşteri Önceliği")
 else:
-    print(f"{isim} ehliyet alamazsiniz. Cunku yasiniz tutmuyor")
+    print("Normal Ariza kaydi")
+
+
+print(internet_var)
