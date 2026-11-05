@@ -23,3 +23,17 @@
 #     print("Y En büyük sayi")
 # elif (z > x ) and (z > y):
 #     print("Z en büyük sayi")
+
+# Uygulama 3
+
+isim = input("İsim: ")
+yas = int(input("Yas: "))
+egitim = input("Egitim: ")
+
+if (yas >= 18):
+    if (egitim == "lise" or egitim == "üniversite"):
+        print("Ehliyet alabilirsiniz")
+    else:
+        print(f"{isim} ehliyet alamazsiniz. Cünkü Egitim durumu yetersiz.")
+else:
+    print(f"{isim} ehliyet alamazsiniz. Cunku yasiniz tutmuyor")
