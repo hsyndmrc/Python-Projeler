@@ -39,16 +39,26 @@
 #     print(f"{isim} ehliyet alamazsiniz. Cunku yasiniz tutmuyor")
 
 
-ariza_turu = input("Ariza türü Giriniz: ")
-internet_var = bool(int(input("İnternet Var ise 1, Yok ise 0'a basiniz: ")))
-musteri_tipi = input("Kurumsal mi Normal Musteri mi Yaziniz: ")
+# ariza_turu = input("Ariza türü Giriniz: ")
+# internet_var = bool(int(input("İnternet Var ise 1, Yok ise 0'a basiniz: ")))
+# musteri_tipi = input("Kurumsal mi Normal Musteri mi Yaziniz: ")
 
-if (ariza_turu == "Fiber" and internet_var):
-    print("Acil Fiber Arizasi!!!")
-elif(musteri_tipi == "Kurumsal"):
-    print("Kurumsal Müşteri Önceliği")
-else:
-    print("Normal Ariza kaydi")
+# if (ariza_turu == "Fiber" and internet_var):
+#     print("Acil Fiber Arizasi!!!")
+# elif(musteri_tipi == "Kurumsal"):
+#     print("Kurumsal Müşteri Önceliği")
+# else:
+#     print("Normal Ariza kaydi")
 
 
-print(internet_var)
+# print(internet_var)
+
+
+
+# =========================================== PYTHON GÖREV - 1 ---- SAHA ARİZA ONCELİK SİSTEMİ ===========================================
+# Senaryo: Türktelekom saha ekibindesin. Yeni bir ariza kaydi geliyor. Programın arızanın durumuna göre hangi işlemi yapacağını belirleyecek. 
+
+# 1. Kullanıcıdan üç bilgi al
+# - ariza_turu → Fiber, DSL veya Modem
+# - internet_var → 1 ise internet var, 0 ise yok
+# - musteri_tipi → Bireysel veya Kurumsal
