@@ -63,12 +63,17 @@
 # - internet_var → 1 ise internet var, 0 ise yok
 # - musteri_tipi → Bireysel veya Kurumsal
 
-ariza_türü = input("Lutfen ariza turunuzu giriniz: ")
+ariza_türü = input("Ariza turunuzu giriniz: ")
 internet_var = int(input("İnternetiniz var ise 1'e, Yoksa ise 0'a basiniz: "))
-musteri_tipi = input("Lutfen musteri tipinizi yaziniz: ")
+musteri_tipi = input("Musteri tipinizi yaziniz: ")
+teknisyen_ismi = input("Müdahele edecek Teknisyen: ")
+musaitlik_durumu = int(input("Teknisyen Musait mi? 1 / 0"))
 
-if (musteri_tipi == "Kurumsal" and internet_var == 0 and ariza_türü == "Fiber"):
-    print("Acil - Kurumsal ariza!!!")
+
+if (musteri_tipi == "Kurumsal" and internet_var == 0 and ariza_türü == "Fiber" and musaitlik_durumu == 1):
+    print(f"Acil - Kurumsal ariza!!! Teknisyen Yonlendiriliyor: {teknisyen_ismi}: ")
+elif (musteri_tipi == "Kurumsal" and internet_var == 0 and ariza_türü == "Fiber" and musaitlik_durumu == 0):
+    print("Acil - Kurumsal ariza!!! Teknisyen Bekleniyor...")
 elif (ariza_türü == "Fiber" and internet_var == 0 and musteri_tipi == "Bireysel"):
     print("Yüksel - Fiber baglanti arizasi")
 elif (ariza_türü == "Modem" and internet_var == 1 and musteri_tipi == "Bireysel"):
