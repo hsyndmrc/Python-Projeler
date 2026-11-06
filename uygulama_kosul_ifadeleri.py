@@ -62,3 +62,16 @@
 # - ariza_turu → Fiber, DSL veya Modem
 # - internet_var → 1 ise internet var, 0 ise yok
 # - musteri_tipi → Bireysel veya Kurumsal
+
+ariza_türü = input("Lutfen ariza turunuzu giriniz: ")
+internet_var = int(input("İnternetiniz var ise 1'e, Yoksa ise 0'a basiniz: "))
+musteri_tipi = input("Lutfen musteri tipinizi yaziniz: ")
+
+if (musteri_tipi == "Kurumsal" and internet_var == 0 and ariza_türü == "Fiber"):
+    print("Acil - Kurumsal ariza!!!")
+elif (ariza_türü == "Fiber" and internet_var == 0 and musteri_tipi == "Bireysel"):
+    print("Yüksel - Fiber baglanti arizasi")
+elif (ariza_türü == "Modem" and internet_var == 1 and musteri_tipi == "Bireysel"):
+    print("Düsük - Modem Kontrolü")
+else:
+    print("Normal - Standart ariza kaydi")
