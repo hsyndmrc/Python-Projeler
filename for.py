@@ -49,3 +49,44 @@
 
 # FOR DÖNGÜSÜ UYGULAMA 
 
+arizalar = [{
+    "musteri": "Ahmet",
+    "tur" : "Fiber",
+    "internet" : 0,},
+
+    {   
+    "musteri" : "Mehmet",
+    "tur" : "DSL",
+    "internet" : 1,
+    },
+
+    {
+    "musteri" : "Ayse",
+    "tur" : "Fiber",
+    "internet" : 0 ,
+
+    },
+    {
+    "musteri" : "Fatma",
+    "tur" : "Modem",
+    "internet" : 1,
+    },
+    
+
+    {
+    "musteri" : "Ali",
+    "tur" : "DSL",
+    "internet" : 0,
+    }]
+
+internet_olmayan_musteri_sayisi = 0
+
+for ariza in arizalar:
+    # print(ariza["musteri"])
+    if ariza["internet"] == 0:
+        print(ariza["musteri"],ariza["tur"])
+        internet_olmayan_musteri_sayisi = internet_olmayan_musteri_sayisi + 1
+
+
+
+print(f"İnterneti olmayan toplam musteri sayisi: {internet_olmayan_musteri_sayisi}")
