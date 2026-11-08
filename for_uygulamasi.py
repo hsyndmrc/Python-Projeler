@@ -23,26 +23,64 @@
 # print(f"Kritik seviyede olan malzeme miktari: {kritik_stok}")
 
 
-iller = {
-    "01" : "Adana",
-    "02" : "Adiyaman",
-    "06" : "Ankara",
-    "27" : "Gaziantep",
-    "34" : "İstanbul",
-    "35" : "İzmir",
-    "42" : "Konya"
+# iller = {
+#     "01" : "Adana",
+#     "02" : "Adiyaman",
+#     "06" : "Ankara",
+#     "27" : "Gaziantep",
+#     "34" : "İstanbul",
+#     "35" : "İzmir",
+#     "42" : "Konya"
+# }
+
+# sayac = 0
+
+# # Şehirleri yazdırma
+# for key,value in iller.items():
+#     # print(key,value)
+#     if (key == "27"):
+#         print(f"27 Plakali Sehir: {value}")
+
+#     if("a" in value or "A" in value):
+#             print(f"İçerisinde 'a' veya 'A' olan Şehiler: {value}")
+#             sayac += 1
+
+# print(f"İçerisinde 'a' ya da 'A' Bulunan sehirlerin miktari {sayac}")
+
+
+
+
+
+
+depo = {
+    "Fiber Kablo": {"stok": 20, "fiyat": 150},
+    "Modem": {"stok": 4, "fiyat": 1200},
+    "ONT": {"stok": 8, "fiyat": 850},
+    "Splitter": {"stok": 3, "fiyat": 200},
+    "RJ45": {"stok": 50, "fiyat": 10}
 }
 
-sayac = 0
+depo_toplam_deger = 0
+kritik_urun_sayisi = 0
 
-# Şehirleri yazdırma
-for key,value in iller.items():
-    # print(key,value)
-    if (key == "27"):
-        print(f"27 Plakali Sehir: {value}")
+for urun_adi, bilgiler in depo.items(): 
+     # urunlerin içindeki stok ve fiyat çarpılarak her bir ürünün kaç olduğunun bulduk.
+    urun_hesap = bilgiler["stok"] * bilgiler["fiyat"]
+    depo_toplam_deger += urun_hesap
 
-    if("a" in value or "A" in value):
-            print(f"İçerisinde 'a' veya 'A' olan Şehiler: {value}")
-            sayac += 1
+    print(f"""
+                ============== DEPO RAPORU ==============
+                Urun: {urun_adi}
+                Stok: {bilgiler['stok']}
+                Fiyat: {bilgiler['fiyat']}
+                Urunun Toplam Degeri: {urun_hesap}
+""")
+    if (bilgiler["stok"] < 5):
+        print("""
+                Durum: KRİTİK STOK!!!        
+""")
 
-print(f"İçerisinde 'a' ya da 'A' Bulunan sehirlerin miktari {sayac}")
+
+print(f"Deponun Toplam Degeri: {depo_toplam_deger}")
+
+
